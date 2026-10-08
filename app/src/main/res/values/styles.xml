@@ -1,0 +1,10 @@
+<resources>
+    <style name="Theme.Daylight" parent="android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:colorAccent">#315B4B</item>
+        <item name="android:windowBackground">#F8F7F2</item>
+    </style>
+    <color name="icon_background">#244E40</color>
+</resources>

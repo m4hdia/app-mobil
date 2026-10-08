@@ -1,0 +1,99 @@
+<style>
+#daylight-preview{color-scheme:light dark;--day-bg:light-dark(#f8f7f2,#151b17);--day-surface:light-dark(#fffefa,#1e2721);--day-text:light-dark(#262e29,#e8ece4);--day-muted:light-dark(#60695f,#bbc5b8);--day-line:light-dark(#dee2d7,#3b473d);--day-green:light-dark(#315c49,#b2d0b5);--day-soft:light-dark(#e3ede1,#2b493a);font:400 15px/1.55 system-ui,sans-serif;color:var(--day-text);padding:20px 0}
+#daylight-preview *{box-sizing:border-box}
+#daylight-preview .day-phone{max-width:430px;margin:auto;background:var(--day-bg);border:1px solid var(--day-line);border-radius:28px;overflow:hidden}
+#daylight-preview .day-banner{padding:10px 20px;border-bottom:1px solid var(--day-line);font-size:12px;color:var(--day-muted);display:flex;justify-content:space-between;gap:10px;background:var(--day-surface)}
+#daylight-preview .day-content{padding:24px;min-height:575px}
+#daylight-preview .day-brand{display:flex;align-items:center;justify-content:space-between;color:var(--day-green);margin-bottom:24px}
+#daylight-preview .day-brand span{letter-spacing:3px;font-size:11px;font-weight:500}
+#daylight-preview h2{font:400 32px/1.18 Georgia,serif;margin:0 0 8px;letter-spacing:-.8px}
+#daylight-preview h3{font:500 17px/1.4 system-ui,sans-serif;margin:0}
+#daylight-preview p{margin:0}
+#daylight-preview .day-sub{color:var(--day-muted);font-size:13px;margin:0 0 24px}
+#daylight-preview .day-panel{background:var(--day-surface);border:1px solid var(--day-line);border-radius:21px;padding:19px;margin:16px 0}
+#daylight-preview .day-hero{background:light-dark(#294f40,#294f40);color:#f5f3e7;border:0;padding:25px}
+#daylight-preview .day-hero .day-overline{color:#cfdcc8}
+#daylight-preview .day-quote{font:400 26px/1.4 Georgia,serif;margin:20px 0}
+#daylight-preview .day-overline{font-size:10px;font-weight:500;letter-spacing:1.7px;text-transform:uppercase;color:var(--day-muted)}
+#daylight-preview .day-row{display:flex;align-items:center;justify-content:space-between;gap:12px}
+#daylight-preview .day-row>div{min-width:0}
+#daylight-preview .day-soft{background:var(--day-soft);border:0}
+#daylight-preview .day-progress{height:7px;background:var(--day-line);border-radius:8px;margin:15px 0;overflow:hidden}
+#daylight-preview .day-progress span{display:block;height:100%;background:var(--day-green);border-radius:8px}
+#daylight-preview .day-percent{font:400 29px/1.2 Georgia,serif;color:var(--day-green)}
+#daylight-preview .day-small{font-size:12px;color:var(--day-muted)}
+#daylight-preview .day-section{margin:26px 0 12px}
+#daylight-preview button{font:500 13px/1.4 system-ui,sans-serif;color:var(--day-green);border:1px solid var(--day-line);background:var(--day-surface);border-radius:13px;padding:12px 15px;min-height:44px}
+#daylight-preview button:focus-visible,#daylight-preview input:focus-visible,#daylight-preview textarea:focus-visible,#daylight-preview select:focus-visible{outline:2px solid var(--day-green);outline-offset:3px}
+#daylight-preview .day-primary{background:var(--day-green);color:light-dark(#fff,#173726);border:0;width:100%}
+#daylight-preview .day-link{border:0;background:transparent;padding:8px 0;text-align:left}
+#daylight-preview .day-actions{display:flex;gap:8px;margin-top:12px}
+#daylight-preview .day-actions button{flex:1;padding:12px 5px}
+#daylight-preview .day-list-row{display:flex;align-items:center;gap:13px;padding:14px 0;border:0;border-bottom:1px solid var(--day-line);width:100%;border-radius:0;background:transparent;text-align:left}
+#daylight-preview .day-list-row:last-child{border-bottom:0}
+#daylight-preview .day-list-row .day-grow{flex:1;color:var(--day-text)}
+#daylight-preview .day-nav{display:flex;justify-content:space-around;border-top:1px solid var(--day-line);padding:9px 5px 12px;background:var(--day-surface)}
+#daylight-preview .day-nav button{flex:1;display:flex;align-items:center;flex-direction:column;gap:5px;border:0;border-radius:0;background:transparent;padding:5px 2px;color:var(--day-muted);font-size:11px;min-width:0}
+#daylight-preview .day-nav button[aria-current=page]{color:var(--day-green)}
+#daylight-preview .day-nav .day-icon{display:flex;align-items:center;justify-content:center;width:48px;height:27px;border-radius:20px}
+#daylight-preview .day-nav button[aria-current=page] .day-icon{background:var(--day-soft)}
+#daylight-preview svg{width:20px;height:20px;flex:none}
+#daylight-preview label.day-check{display:flex;gap:12px;align-items:center;min-height:49px;color:var(--day-text)}
+#daylight-preview input[type=checkbox]{width:19px;height:19px;accent-color:var(--day-green);flex:none}
+#daylight-preview input:not([type=checkbox]),#daylight-preview textarea,#daylight-preview select{display:block;width:100%;padding:13px 14px;border:1px solid var(--day-line);border-radius:13px;background:var(--day-surface);color:var(--day-text);font:400 16px/1.4 system-ui,sans-serif;margin:7px 0 17px}
+#daylight-preview textarea{min-height:105px;resize:vertical}
+#daylight-preview .day-label{font-size:13px;font-weight:500}
+#daylight-preview .day-chips{display:flex;flex-wrap:wrap;gap:6px;margin:16px 0}
+#daylight-preview .day-chips button{border-radius:20px;padding:7px 11px;min-height:36px;font-size:12px}
+#daylight-preview .day-chips button[aria-pressed=true]{background:var(--day-soft);border-color:var(--day-soft)}
+#daylight-preview .day-heart{border:0;background:transparent;padding:5px;min-width:44px;color:var(--day-green)}
+#daylight-preview .day-empty{text-align:center;padding:30px 10px;color:var(--day-muted)}
+#daylight-preview .day-message{background:var(--day-soft);padding:12px 20px;font-size:13px;border-top:1px solid var(--day-line)}
+#daylight-preview .day-message:empty{display:none}
+@media(max-width:380px){#daylight-preview .day-content{padding:18px}#daylight-preview h2{font-size:28px}#daylight-preview .day-quote{font-size:24px}}
+</style>
+<div id="daylight-preview" class="viz-dotted-background">
+  <section class="day-phone" aria-label="Daylight interactive design preview">
+    <div class="day-banner"><span>Daylight · Design preview</span><span>Sample data</span></div>
+    <main class="day-content"></main>
+    <div class="day-message" role="status" aria-live="polite"></div>
+    <nav class="day-nav" aria-label="Main navigation"></nav>
+  </section>
+</div>
+<script>
+(function(){
+  const root=document.getElementById('daylight-preview');
+  const content=root.querySelector('.day-content');
+  const nav=root.querySelector('.day-nav');
+  const status=root.querySelector('.day-message');
+  const labels=['Read 10 pages','Move my body','Work on my project','Practice French','Make time for reflection'];
+  const initial={tab:'home',dark:null,checked:[true,true,false,true,false],reflection:'',tomorrow:'',filter:'All',quotes:[{title:'Small steps',body:'Make one small promise to yourself. Keep it today.',category:'Motivation',favorite:false},{title:'Begin again',body:'There is room to begin again, right where you are.',category:'Personal',favorite:true}],schedules:[{name:'A little inspiration',time:'08:00',enabled:true},{name:'Evening reflection',time:'20:00',enabled:true}]};
+  let state=structuredClone(initial);
+  const saved=window.openai?.widgetState?.privateContent;
+  if(saved&&saved.version===1)state={...state,...saved.state};
+  function esc(text){return String(text).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+  function icon(name){return '<i data-lucide="'+name+'" aria-hidden="true"></i>';}
+  function done(){return state.checked.filter(Boolean).length;}
+  function persist(){if(window.openai?.setWidgetState)window.openai.setWidgetState({modelContent:{screen:state.tab,preview:true},privateContent:{version:1,state:{tab:state.tab,dark:state.dark,checked:state.checked,filter:state.filter}}}).catch(()=>{});}
+  function message(text){status.textContent=text;}
+  function heading(title,sub){return '<h2>'+title+'</h2><p class="day-sub">'+sub+'</p>';}
+  function progress(){return '<div class="day-panel"><div class="day-row"><div><p class="day-overline">Today’s progress</p><h3>'+done()+' of 5 items complete</h3></div><span class="day-percent">'+done()*20+'%</span></div><div class="day-progress" role="progressbar" aria-label="Daily goals" aria-valuemin="0" aria-valuemax="100" aria-valuenow="'+done()*20+'"><span style="width:'+done()*20+'%"></span></div><p class="day-small">Every small step counts.</p></div>';}
+  function home(){return '<div class="day-brand"><span>☼ &nbsp; D A Y L I G H T</span><button class="day-link cursor-interaction" data-go="library" aria-label="Open library">'+icon('search')+'</button></div>'+heading('Good morning.','A little space for what matters.')+'<div class="day-panel day-hero"><p class="day-overline">A moment of inspiration</p><p class="day-quote">A little intention.<br>A little progress.<br>A day that feels like yours.</p><div class="day-row"><span class="day-small" style="color:#cfdcc8">Your daily companion</span>'+icon('sprout')+'</div></div>'+progress()+'<div class="day-panel day-soft day-row">'+icon('bell')+'<div style="flex:1"><p class="day-overline">Up next · Sample</p><h3>Evening reflection</h3><p class="day-small">Today · 20:00</p></div><button class="day-link cursor-interaction" data-go="schedule" aria-label="View reminders">'+icon('chevron-right')+'</button></div><div class="day-section day-row"><h3>Your daily rituals</h3><button class="day-link cursor-interaction" data-go="forms">See all</button></div><button class="day-list-row cursor-interaction" data-go="review">'+icon('circle-check')+'<span class="day-grow">Daily goals<br><span class="day-small">'+done()*20+'% complete · tap to reflect</span></span>'+icon('chevron-right')+'</button><div class="day-section"><h3>Make a little space</h3><div class="day-actions"><button class="cursor-interaction" data-go="add">+ Quote</button><button class="cursor-interaction" data-go="forms">+ Form</button><button class="cursor-interaction" data-go="new-reminder">+ Reminder</button></div></div>';}
+  function library(){const categories=['All','Quotes','Quran','Hadith','Motivation','Personal'];const entries=state.quotes.map((q,i)=>({...q,index:i})).filter(q=>state.filter==='All'||q.category===state.filter);return heading('Words to return to','Your personal collection of inspiration.')+'<button class="day-primary cursor-interaction" data-go="add">+ Save an entry</button><div class="day-chips">'+categories.map(c=>'<button class="cursor-interaction" data-filter="'+c+'" aria-pressed="'+(state.filter===c)+'">'+c+'</button>').join('')+'</div>'+entries.map(q=>'<article class="day-panel"><div class="day-row"><span class="day-overline">'+esc(q.category)+'</span><button class="day-heart cursor-interaction" data-favorite="'+q.index+'" aria-label="Toggle favorite" aria-pressed="'+q.favorite+'">'+(q.favorite?'♥':'♡')+'</button></div><h3>'+esc(q.title)+'</h3><p style="margin-top:12px">'+esc(q.body)+'</p><p class="day-small" style="margin-top:14px">Preview entry</p></article>').join('')+(entries.length?'':'<div class="day-empty"><h3>A collection that feels like you</h3><p style="margin-top:12px">'+(['Quran','Hadith'].includes(state.filter)?'Add verified text yourself. No religious text is generated.':'Save the words you want to carry with you.')+'</p></div>');}
+  function forms(){return heading('Rituals, made personal','A little structure. A lot of possibility.')+'<div class="day-panel day-soft"><h2 style="font-size:26px">Begin with intention.<br>End with reflection.</h2><p class="day-small">Your morning plan, ready to revisit tonight.</p></div><div class="day-panel"><h3>Daily goals</h3><p class="day-sub" style="margin:10px 0">Make room for what matters today.</p><p class="day-small">5 intentions · evening review at 20:00</p><div class="day-actions"><button class="cursor-interaction" data-go="review">Review my day</button><button class="cursor-interaction" data-go="history">View history</button></div></div>';}
+  function review(){return '<button class="day-link cursor-interaction" data-go="forms">← Back to forms</button>'+heading('A moment to reflect','Daily goals · Sample response')+progress()+'<div class="day-panel"><h3>Today’s intentions</h3>'+labels.map((label,i)=>'<label class="day-check cursor-interaction"><input type="checkbox" data-check="'+i+'" '+(state.checked[i]?'checked':'')+'><span>'+label+'</span></label>').join('')+'</div><label class="day-label" for="day-reflection">What did you notice today?</label><textarea id="day-reflection" maxlength="500" placeholder="Give yourself a moment…">'+esc(state.reflection)+'</textarea><label class="day-label" for="day-tomorrow">Tomorrow I want to…</label><textarea id="day-tomorrow" maxlength="500" placeholder="One small intention">'+esc(state.tomorrow)+'</textarea><button class="day-primary cursor-interaction" data-action="save-reflection">Save reflection</button>';}
+  function history(){return '<button class="day-link cursor-interaction" data-go="forms">← Back to forms</button>'+heading('Your history','A record of showing up for yourself.')+'<button class="day-list-row cursor-interaction" data-go="review"><span class="day-grow">Daily goals · Sample entry<br><span class="day-small">'+done()*20+'% complete'+(state.reflection?' · Reflection saved':'')+'</span></span>'+icon('chevron-right')+'</button>';}
+  function schedule(){return heading('Gentle nudges','The right words, at your own rhythm.')+'<button class="day-primary cursor-interaction" data-go="new-reminder">+ Create a reminder</button>'+state.schedules.map((s,i)=>'<div class="day-panel"><label class="day-check cursor-interaction"><span style="flex:1"><h3>'+esc(s.name)+'</h3><span class="day-small">Daily · '+esc(s.time)+'</span></span><input type="checkbox" data-schedule="'+i+'" '+(s.enabled?'checked':'')+' aria-label="Enable '+esc(s.name)+'"></label></div>').join('')+'<p class="day-small">Preview only · These controls do not send Android notifications.</p>';}
+  function settings(){return heading('Make yourself at home','Your space. Your pace. Your preferences.')+'<div class="day-panel"><h3>Appearance</h3><label class="day-check cursor-interaction"><span style="flex:1">Dark mode</span><input type="checkbox" data-dark '+(state.dark?'checked':'')+'></label></div><div class="day-panel"><h3>Room for quiet</h3><p style="margin-top:10px">22:00 – 07:00</p><p class="day-small">Your reminder-free rest window.</p></div><div class="day-panel day-soft">'+icon('lock-keyhole')+'<h3 style="margin:12px 0">Private by design</h3><p>No accounts. No ads. No tracking.</p><p class="day-small" style="margin-top:12px">This is an interactive design preview. Android notifications, database storage, and backup are not running here.</p></div>';}
+  function add(){return '<button class="day-link cursor-interaction" data-go="library">← Back to library</button>'+heading('Save something meaningful','Words for the days ahead.')+'<form data-form="quote"><label class="day-label" for="day-title">Title</label><input id="day-title" name="title" required maxlength="100" placeholder="A thought to return to"><label class="day-label" for="day-body">Content</label><textarea id="day-body" name="body" required maxlength="500" placeholder="Write your own words…"></textarea><label class="day-label" for="day-category">Category</label><select id="day-category" name="category">'+['Quotes','Quran','Hadith','Motivation','Reminders','Personal'].map(c=>'<option>'+c+'</option>').join('')+'</select><button class="day-primary cursor-interaction" type="submit">Save in preview</button></form>';}
+  function newReminder(){return '<button class="day-link cursor-interaction" data-go="schedule">← Back to reminders</button>'+heading('Find your rhythm','A reminder should fit your day.')+'<form data-form="reminder"><label class="day-label" for="day-reminder-name">Reminder name</label><input id="day-reminder-name" name="title" required maxlength="100" placeholder="A little inspiration"><label class="day-label" for="day-reminder-time">Daily time</label><input id="day-reminder-time" type="time" name="time" required value="20:00"><button class="day-primary cursor-interaction" type="submit">Add to preview</button></form>';}
+  const screens={home,library,forms,review,history,schedule,settings,add,'new-reminder':newReminder};
+  function render(){root.style.colorScheme=state.dark===null?'light dark':state.dark?'dark':'light';content.innerHTML=(screens[state.tab]||home)();const selected=['review','history'].includes(state.tab)?'forms':state.tab==='add'?'library':state.tab==='new-reminder'?'schedule':state.tab;nav.innerHTML=[['home','sun','Home'],['library','book-open','Library'],['forms','list-checks','Forms'],['schedule','clock','Schedule'],['settings','sliders-horizontal','Settings']].map(([id,ic,label])=>'<button class="cursor-interaction" data-go="'+id+'" '+(selected===id?'aria-current="page"':'')+'><span class="day-icon">'+icon(ic)+'</span><span>'+label+'</span></button>').join('');if(window.lucide)window.lucide.createIcons({attrs:{width:20,height:20}});}
+  root.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;if(b.dataset.go){state.tab=b.dataset.go;message('');render();persist();}if(b.dataset.filter){state.filter=b.dataset.filter;render();persist();}if(b.dataset.favorite!==undefined){const q=state.quotes[Number(b.dataset.favorite)];q.favorite=!q.favorite;render();persist();}if(b.dataset.action==='save-reflection'){state.reflection=root.querySelector('#day-reflection').value;state.tomorrow=root.querySelector('#day-tomorrow').value;persist();message('Reflection saved in this preview.');}});
+  root.addEventListener('click',e=>{const submit=e.target.closest('button[type="submit"]');if(!submit)return;e.preventDefault();const form=submit.form;if(form&&form.reportValidity())form.dispatchEvent(new Event('submit',{bubbles:true,cancelable:true}));});
+  root.addEventListener('change',e=>{const t=e.target;if(t.dataset.check!==undefined){state.checked[Number(t.dataset.check)]=t.checked;state.reflection=root.querySelector('#day-reflection').value;state.tomorrow=root.querySelector('#day-tomorrow').value;render();persist();}if(t.dataset.schedule!==undefined){state.schedules[Number(t.dataset.schedule)].enabled=t.checked;persist();}if(t.hasAttribute('data-dark')){state.dark=t.checked;render();persist();}});
+  root.addEventListener('submit',e=>{e.preventDefault();const form=e.target;if(form.dataset.form==='quote'){if(state.quotes.length>=12){message('This preview supports up to 12 entries.');return;}const data=new FormData(form);if(!String(data.get('title')).trim()||!String(data.get('body')).trim()){message('Please add a title and some content.');return;}state.quotes.push({title:data.get('title'),body:data.get('body'),category:data.get('category'),favorite:false});state.tab='library';state.filter='All';render();persist();message('Entry added to this preview.');}if(form.dataset.form==='reminder'){if(state.schedules.length>=8){message('This preview supports up to 8 reminders.');return;}const data=new FormData(form);state.schedules.push({name:data.get('title'),time:data.get('time'),enabled:true});state.tab='schedule';render();persist();message('Reminder added to the preview; no notification is scheduled.');}});
+  window.addEventListener('openai:set_globals',e=>{const incoming=e.detail?.globals?.widgetState?.privateContent;if(incoming?.version===1){state={...state,...incoming.state};render();}});
+  render();
+})();
+</script>
